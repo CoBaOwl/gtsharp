@@ -1,0 +1,11 @@
+
+
+# multiblocks
+gcym.machine.large_oil_cracker.name=Large Oil Cracker
+gcym.machine.large_gas_collector.name=Large Gas Collector
+
+# multiblock descriptions
+gcym.multiblock.large_oil_cracker.description=A multiblock Machine for burn oil!
+gcym.multiblock.large_gas_collector.description=Multiblock for drying atmospheres!
+
+tile.large_multiblock_casing.void_miner_casing.name=Voidproof Casing
