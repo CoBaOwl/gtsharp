@@ -6,11 +6,6 @@ public final class GTSharpRecipeLoader {
 
     public static void init() {
         GTSharpMetaTileEntityLoader.init();
-//        GCYMCasingLoader.init();
-//        GCYMMixerRecipes.init();
-//        GCYMMiscRecipes.init();
-//        GCYMMaterialRecipeHandler.register();
-//        ManualABSRecipes.register();
     }
 
 }

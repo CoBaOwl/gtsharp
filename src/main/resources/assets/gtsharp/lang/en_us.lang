@@ -3,9 +3,16 @@
 # multiblocks
 gtsharp.machine.large_oil_cracker.name=Large Oil Cracker
 gtsharp.machine.large_gas_collector.name=Large Gas Collector
+gtsharp.machine.large_miner.uv.name=Infinite Ore Drilling Plant
+gtsharp.machine.large_cable_factory.name=Large Cable Factory
 
 # multiblock descriptions
 gtsharp.multiblock.large_oil_cracker.description=A multiblock Machine for burn oil!
 gtsharp.multiblock.large_gas_collector.description=Multiblock for drying atmospheres!
+gtsharp.multiblock.large_miner.uv.description=Not dry your world
+gtsharp.multiblock.large_cable_factory.description=One step to cable
+
+
+recipemap.large_cable_factory.name=Cable Factory
 
 tile.large_multiblock_casing.void_miner_casing.name=Voidproof Casing

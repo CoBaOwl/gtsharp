@@ -2,6 +2,7 @@ package com.coba.gtsharp.common;
 
 import com.coba.gtsharp.GTSharp;
 import com.coba.gtsharp.common.block.GTSharpMetaBlocks;
+import com.coba.gtsharp.loaders.recipe.GTSharpCableRecipeHandler;
 import com.coba.gtsharp.loaders.recipe.GTSharpRecipeLoader;
 import gregicality.multiblocks.common.block.GCYMMetaBlocks;
 import gregtech.api.block.VariantItemBlock;
@@ -51,5 +52,6 @@ public class CommonProxy {
     @SubscribeEvent()
     public static void registerRecipes(RegistryEvent.Register<IRecipe> event) {
         GTSharpRecipeLoader.init();
+        GTSharpCableRecipeHandler.register();
     }
 }

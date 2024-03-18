@@ -19,7 +19,7 @@ import net.minecraft.item.crafting.IRecipe;
 import net.minecraft.item.Item;
 import net.minecraftforge.event.RegistryEvent;
 
-@Mod(modid = Tags.MODID, version = Tags.VERSION, name = Tags.MODNAME, acceptedMinecraftVersions = "[1.12.2]", dependencies = "required-after:gcym")
+@Mod(modid = Tags.MODID, version = Tags.VERSION, name = Tags.MODNAME, acceptedMinecraftVersions = "[1.12.2]", dependencies = "required-after:gcym;")
 public class GTSharp {
 
     public static final Logger LOGGER = LogManager.getLogger(Tags.MODID);
