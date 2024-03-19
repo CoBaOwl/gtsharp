@@ -14,5 +14,6 @@ gtsharp.multiblock.large_cable_factory.description=One step to cable
 
 
 recipemap.large_cable_factory.name=Cable Factory
+recipemap.infinite_miner_factory.name=Infinite Miner
 
 tile.large_multiblock_casing.void_miner_casing.name=Voidproof Casing

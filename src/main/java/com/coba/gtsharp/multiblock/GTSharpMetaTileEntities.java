@@ -23,6 +23,6 @@ public final class GTSharpMetaTileEntities {
         LARGE_MACHINE = registerMetaTileEntity(22620, new MetaTileEntityLargeOilCracker(gcymId("large_oil_cracker")));
         LARGE_GAS_COLLECTOR = registerMetaTileEntity(22621, new MetaTileEntityLargeGasCollector(gcymId("large_gas_collector")));
         LARGE_CABLE_FACTORY = registerMetaTileEntity(22622, new MetaTileEntityLargeCableFactory(gcymId("large_cable_factory")));
-//        BASIC_INFINITE_MINER = registerMetaTileEntity(22632, new MetaTileEntityInfiniteMiner(gcymId("large_miner.uv"), GTValues.UV, 16, 3, 4, Materials.NaquadahAlloy, 8*4));
+        BASIC_INFINITE_MINER = registerMetaTileEntity(22632, new MetaTileEntityInfiniteMiner(gcymId("large_miner.uv")));
     }
 }

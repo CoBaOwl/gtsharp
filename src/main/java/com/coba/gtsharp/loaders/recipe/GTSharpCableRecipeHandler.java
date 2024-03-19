@@ -4,7 +4,6 @@ import com.google.common.collect.ImmutableMap;
 import gregtech.api.GTValues;
 import gregtech.api.recipes.builders.AssemblerRecipeBuilder;
 import gregtech.api.unification.material.Material;
-import gregtech.api.unification.material.info.MaterialFlag;
 import gregtech.api.unification.material.properties.PropertyKey;
 import gregtech.api.unification.material.properties.WireProperties;
 import gregtech.api.unification.ore.OrePrefix;
