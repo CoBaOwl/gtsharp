@@ -4,14 +4,13 @@ import com.coba.gtsharp.api.recipes.GTSharpRecipeMaps;
 import com.coba.gtsharp.api.render.GTSharpTextures;
 import com.coba.gtsharp.common.block.GTSharpMetaBlocks;
 import com.coba.gtsharp.common.block.blocks.BlockLargeMultiblockCasing;
-import gregicality.multiblocks.api.metatileentity.GCYMRecipeMapMultiblockController;
 import gregicality.multiblocks.api.render.GCYMTextures;
-import gregicality.multiblocks.common.block.GCYMMetaBlocks;
 import gregtech.api.GTValues;
 import gregtech.api.metatileentity.MetaTileEntity;
 import gregtech.api.metatileentity.interfaces.IGregTechTileEntity;
 import gregtech.api.metatileentity.multiblock.IMultiblockPart;
 import gregtech.api.metatileentity.multiblock.MultiblockAbility;
+import gregtech.api.metatileentity.multiblock.RecipeMapMultiblockController;
 import gregtech.api.pattern.BlockPattern;
 import gregtech.api.pattern.FactoryBlockPattern;
 import gregtech.api.pattern.TraceabilityPredicate;
@@ -27,7 +26,7 @@ import org.jetbrains.annotations.NotNull;
 
 import java.util.Arrays;
 
-public class MetaTileEntityInfiniteMiner extends GCYMRecipeMapMultiblockController {
+public class MetaTileEntityInfiniteMiner extends RecipeMapMultiblockController {
     public MetaTileEntityInfiniteMiner(ResourceLocation metaTileEntityId) {
         super(metaTileEntityId, GTSharpRecipeMaps.INFINITE_MINER_RECIPES);
     }

@@ -18,6 +18,9 @@ import static gregtech.api.GTValues.*;
 import static gregtech.api.recipes.RecipeMaps.ASSEMBLER_RECIPES;
 import static gregtech.api.unification.material.Materials.*;
 import static gregtech.api.unification.ore.OrePrefix.*;
+import static gregtech.common.items.MetaItems.*;
+import static gregtech.common.metatileentities.MetaTileEntities.ADVANCED_LARGE_MINER;
+import static gregtech.common.metatileentities.MetaTileEntities.HULL;
 
 public final class GTSharpMetaTileEntityLoader {
 
@@ -53,5 +56,16 @@ public final class GTSharpMetaTileEntityLoader {
                 .circuitMeta(6)
                 .outputs(GTSharpMetaBlocks.LARGE_MULTIBLOCK_CASING.getItemVariant(BlockLargeMultiblockCasing.CasingType.VOID_MINER_CASING, 2))
                 .duration(50).buildAndRegister();
+        ASSEMBLER_RECIPES.recipeBuilder()
+                .input(HULL[ZPM])
+                .input(frameGt, HSSS, 4)
+                .input(circuit, MarkerMaterials.Tier.ZPM, 4)
+                .input(ELECTRIC_MOTOR_ZPM, 4)
+                .input(ELECTRIC_PUMP_ZPM, 4)
+                .input(CONVEYOR_MODULE_ZPM, 4)
+                .input(gear, NaquadahAlloy, 4)
+                .circuitMeta(2)
+                .output(GTSharpMetaTileEntities.BASIC_INFINITE_MINER)
+                .duration(400).EUt(VA[ZPM]).buildAndRegister();
     }
 }
