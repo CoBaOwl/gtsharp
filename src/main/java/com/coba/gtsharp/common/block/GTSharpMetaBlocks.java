@@ -1,7 +1,8 @@
 package com.coba.gtsharp.common.block;
 
 
-import com.coba.gtsharp.common.block.blocks.BlockLargeMultiblockCasing;
+import com.coba.gtsharp.common.block.blocks.BlockInfiniteCasing;
+import com.coba.gtsharp.common.block.blocks.BlockVoidCasing;
 import gregtech.common.blocks.MetaBlocks;
 import net.minecraft.block.Block;
 import net.minecraft.block.properties.IProperty;
@@ -17,16 +18,21 @@ public final class GTSharpMetaBlocks {
 
     private GTSharpMetaBlocks() {}
 
-    public static BlockLargeMultiblockCasing LARGE_MULTIBLOCK_CASING;
+    public static BlockInfiniteCasing INFINITE_MINER_CASING;
+    public static BlockVoidCasing VOID_CASING;
 
     public static void init() {
-        LARGE_MULTIBLOCK_CASING = new BlockLargeMultiblockCasing();
-        LARGE_MULTIBLOCK_CASING.setRegistryName("large_multiblock_casing");
+        INFINITE_MINER_CASING = new BlockInfiniteCasing();
+        INFINITE_MINER_CASING.setRegistryName("infinite_miner_casing");
+
+        VOID_CASING = new BlockVoidCasing();
+        VOID_CASING.setRegistryName("void_miner_casing");
     }
 
     @SideOnly(Side.CLIENT)
     public static void registerItemModels() {
-        registerItemModel(LARGE_MULTIBLOCK_CASING);
+        registerItemModel(INFINITE_MINER_CASING);
+        VOID_CASING.onModelRegister();
     }
 
     @SideOnly(Side.CLIENT)

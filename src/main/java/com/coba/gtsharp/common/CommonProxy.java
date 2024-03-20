@@ -31,7 +31,8 @@ public class CommonProxy {
     @SubscribeEvent
     public static void registerBlocks(RegistryEvent.Register<Block> event) {
         IForgeRegistry<Block> registry = event.getRegistry();
-        registry.register(GTSharpMetaBlocks.LARGE_MULTIBLOCK_CASING);
+        registry.register(GTSharpMetaBlocks.INFINITE_MINER_CASING);
+        registry.register(GTSharpMetaBlocks.VOID_CASING);
 
     }
 
@@ -45,7 +46,8 @@ public class CommonProxy {
     @SubscribeEvent
     public static void registerItems(RegistryEvent.Register<Item> event) {
         IForgeRegistry<Item> registry = event.getRegistry();
-        registry.register(createItemBlock(GTSharpMetaBlocks.LARGE_MULTIBLOCK_CASING, VariantItemBlock::new));
+        registry.register(createItemBlock(GTSharpMetaBlocks.INFINITE_MINER_CASING, VariantItemBlock::new));
+        registry.register(createItemBlock(GTSharpMetaBlocks.VOID_CASING, VariantItemBlock::new));
 
     }
 

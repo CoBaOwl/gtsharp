@@ -8,10 +8,10 @@
   },
   "variants": {
     "variant": {
-      "void_miner_casing": {
+      "infinite_miner_casing": {
         "model": "minecraft:cube_all",
         "textures": {
-          "all": "gregtech:blocks/casings/large_multiblock_casing/void_miner_casing"
+          "all": "gtsharp:blocks/casings/large_multiblock_casing/infinite_miner_casing"
         }
       }
     }

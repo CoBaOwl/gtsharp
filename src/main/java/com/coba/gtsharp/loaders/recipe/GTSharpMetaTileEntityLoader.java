@@ -1,11 +1,9 @@
 package com.coba.gtsharp.loaders.recipe;
 
-import com.coba.gtsharp.api.recipes.GTSharpRecipeMaps;
 import com.coba.gtsharp.common.block.GTSharpMetaBlocks;
-import com.coba.gtsharp.common.block.blocks.BlockLargeMultiblockCasing;
+import com.coba.gtsharp.common.block.blocks.BlockInfiniteCasing;
 import com.coba.gtsharp.multiblock.GTSharpMetaTileEntities;
 
-import gregtech.api.GTValues;
 import gregtech.api.recipes.ModHandler;
 import gregtech.api.unification.material.MarkerMaterials;
 import gregtech.api.unification.material.Materials;
@@ -19,7 +17,6 @@ import static gregtech.api.recipes.RecipeMaps.ASSEMBLER_RECIPES;
 import static gregtech.api.unification.material.Materials.*;
 import static gregtech.api.unification.ore.OrePrefix.*;
 import static gregtech.common.items.MetaItems.*;
-import static gregtech.common.metatileentities.MetaTileEntities.ADVANCED_LARGE_MINER;
 import static gregtech.common.metatileentities.MetaTileEntities.HULL;
 
 public final class GTSharpMetaTileEntityLoader {
@@ -45,7 +42,7 @@ public final class GTSharpMetaTileEntityLoader {
                 'C', new UnificationEntry(circuit, MarkerMaterials.Tier.LuV),
                 'A', MetaTileEntities.ASSEMBLER[IV].getStackForm(),
                 'W', MetaTileEntities.WIREMILL[IV].getStackForm());
-        ModHandler.addShapedRecipe(true, "void_miner_casing", GTSharpMetaBlocks.LARGE_MULTIBLOCK_CASING.getItemVariant(BlockLargeMultiblockCasing.CasingType.VOID_MINER_CASING, 2),
+        ModHandler.addShapedRecipe(true, "infinite_miner_casing", GTSharpMetaBlocks.INFINITE_MINER_CASING.getItemVariant(BlockInfiniteCasing.CasingType.INFINITE_MINER_CASING, 2),
                 "PhP", "PFP", "PwP", 'P',
                 new UnificationEntry(OrePrefix.plate, Materials.NaquadahAlloy), 'F',
                 new UnificationEntry(OrePrefix.frameGt, Materials.NaquadahAlloy));
@@ -54,7 +51,7 @@ public final class GTSharpMetaTileEntityLoader {
                 .input(plate, NaquadahAlloy, 6)
                 .input(frameGt, NaquadahAlloy)
                 .circuitMeta(6)
-                .outputs(GTSharpMetaBlocks.LARGE_MULTIBLOCK_CASING.getItemVariant(BlockLargeMultiblockCasing.CasingType.VOID_MINER_CASING, 2))
+                .outputs(GTSharpMetaBlocks.INFINITE_MINER_CASING.getItemVariant(BlockInfiniteCasing.CasingType.INFINITE_MINER_CASING, 2))
                 .duration(50).buildAndRegister();
         ASSEMBLER_RECIPES.recipeBuilder()
                 .input(HULL[ZPM])

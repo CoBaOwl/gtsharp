@@ -1,0 +1,23 @@
+{
+  "forge_marker": 1,
+  "defaults": {
+    "model": "minecraft:cube_all",
+    "textures": {
+      "all": "gregtech:blocks/rendering_error"
+    }
+  },
+  "variants": {
+    "active=false,variant=void_miner_casing": {
+      "model": "minecraft:cube_all",
+      "textures": {
+        "all": "gtsharp:blocks/casings/large_multiblock_casing/void_miner_casing"
+      }
+    },
+    "active=true,variant=void_miner_casing": {
+      "model": "minecraft:cube_all",
+      "textures": {
+        "all": "gtsharp:blocks/casings/large_multiblock_casing/void_miner_casing_active"
+      }
+    }
+  }
+}
