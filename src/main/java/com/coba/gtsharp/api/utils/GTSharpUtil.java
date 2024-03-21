@@ -6,7 +6,7 @@ import org.jetbrains.annotations.NotNull;
 
 public final class GTSharpUtil {
 
-    public static @NotNull ResourceLocation gcymId(@NotNull String path) {
+    public static @NotNull ResourceLocation gtsId(@NotNull String path) {
         return new ResourceLocation(GTSharp.MODID, path);
     }
 

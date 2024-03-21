@@ -33,16 +33,6 @@ public class GTSharp {
             serverSide = "com.coba.gtsharp.common.CommonProxy")
     public static CommonProxy proxy;
 
-//    @Mod.EventHandler
-    // preInit "Run before anything else. Read your config, create blocks, items, etc. (Remove if not needed)
-//    public void preInit(FMLPreInitializationEvent event) {
-//        // register to the event bus so that we can listen to events
-//        MinecraftForge.EVENT_BUS.register(this);
-//        LOGGER.info("I am " + Tags.MODNAME + " + at version " + Tags.VERSION);
-//
-//        GTSharpMetaTileEntities.init();
-//    }
-
     @Mod.EventHandler
     public void onPreInit(@NotNull FMLPreInitializationEvent event) {
         MinecraftForge.EVENT_BUS.register(this);
