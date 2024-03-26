@@ -1,6 +1,7 @@
 package com.coba.gtsharp.common.block;
 
 
+import com.coba.gtsharp.common.block.blocks.BlockBreakProof;
 import com.coba.gtsharp.common.block.blocks.BlockInfiniteCasing;
 import com.coba.gtsharp.common.block.blocks.BlockVoidCasing;
 import gregtech.common.blocks.MetaBlocks;
@@ -20,10 +21,14 @@ public final class GTSharpMetaBlocks {
 
     public static BlockInfiniteCasing INFINITE_MINER_CASING;
     public static BlockVoidCasing VOID_CASING;
+    public static BlockBreakProof BREAK_PROOF_CASING;
 
     public static void init() {
         INFINITE_MINER_CASING = new BlockInfiniteCasing();
         INFINITE_MINER_CASING.setRegistryName("infinite_miner_casing");
+
+        BREAK_PROOF_CASING = new BlockBreakProof();
+        BREAK_PROOF_CASING.setRegistryName("break_proof_casing");
 
         VOID_CASING = new BlockVoidCasing();
         VOID_CASING.setRegistryName("void_miner_casing");
@@ -32,6 +37,7 @@ public final class GTSharpMetaBlocks {
     @SideOnly(Side.CLIENT)
     public static void registerItemModels() {
         registerItemModel(INFINITE_MINER_CASING);
+        registerItemModel(BREAK_PROOF_CASING);
         VOID_CASING.onModelRegister();
     }
 
