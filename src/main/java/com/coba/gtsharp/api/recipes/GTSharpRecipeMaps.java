@@ -31,6 +31,12 @@ public final class GTSharpRecipeMaps {
             .setProgressBar(GuiTextures.PROGRESS_BAR_MACERATE, ProgressWidget.MoveType.HORIZONTAL)
             .setSound(GTSoundEvents.FIRE);
 
+    public static final RecipeMap<SimpleRecipeBuilder> EXTRUDER_RECIPES = new RecipeMap<>("extruder_recepies", 2, 1,
+            1, 0, new SimpleRecipeBuilder(), false)
+            .setSlotOverlay(false, false, true, GuiTextures.IMPLOSION_OVERLAY_1)
+            .setSlotOverlay(false, false, false, GuiTextures.IMPLOSION_OVERLAY_2)
+            .setSound(GTSoundEvents.ARC);
+
 
     private GTSharpRecipeMaps() {}
 }

@@ -2,10 +2,7 @@ package com.coba.gtsharp.common;
 
 import com.coba.gtsharp.GTSharp;
 import com.coba.gtsharp.common.block.GTSharpMetaBlocks;
-import com.coba.gtsharp.loaders.recipe.GTSharpCableRecipeHandler;
-import com.coba.gtsharp.loaders.recipe.GTSharpInfiniteMinerHandler;
-import com.coba.gtsharp.loaders.recipe.GTSharpMaterialRecipeHandler;
-import com.coba.gtsharp.loaders.recipe.GTSharpRecipeLoader;
+import com.coba.gtsharp.loaders.recipe.*;
 import gregtech.api.block.VariantItemBlock;
 import net.minecraft.item.ItemBlock;
 import net.minecraftforge.fml.common.Mod;
@@ -60,5 +57,6 @@ public class CommonProxy {
         GTSharpCableRecipeHandler.register();
         GTSharpInfiniteMinerHandler.register();
         GTSharpMaterialRecipeHandler.register();
+        GTSharpLargeExtrusionHandler.register();
     }
 }
