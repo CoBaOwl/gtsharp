@@ -25,7 +25,7 @@ public final class GTSharpMetaTileEntities {
         LARGE_GAS_COLLECTOR = registerMetaTileEntity(22621, new MetaTileEntityLargeGasCollector(gtsId("large_gas_collector")));
         LARGE_CABLE_FACTORY = registerMetaTileEntity(22622, new MetaTileEntityLargeCableFactory(gtsId("large_cable_factory")));
         ELECTRIC_IMPLOSION_COMPRESSOR = registerMetaTileEntity(22623, new MetaTileEntityElectricImplosionCompressor(gcymId("electric_implosion_compressor")));
-        LARGE_ROCK_FACTORY = registerMetaTileEntity(22624, new MetaTileEntityLargeRockFactory(gtsId("large_rock_faactory")));
+        LARGE_ROCK_FACTORY = registerMetaTileEntity(22624, new MetaTileEntityLargeRockFactory(gtsId("large_rock_factory")));
         LARGE_EXTRUDER = registerMetaTileEntity(22625, new MetaTileEntityLargeExtruder(gcymId("large_extruder")));
 
         BASIC_INFINITE_MINER = registerMetaTileEntity(22632, new MetaTileEntityInfiniteMiner(gtsId("large_miner.uv")));

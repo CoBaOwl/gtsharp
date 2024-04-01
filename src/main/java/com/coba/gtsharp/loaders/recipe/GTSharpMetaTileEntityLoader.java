@@ -1,10 +1,16 @@
 package com.coba.gtsharp.loaders.recipe;
 
 import com.coba.gtsharp.common.block.GTSharpMetaBlocks;
+import com.coba.gtsharp.common.block.blocks.BlockBreakProof;
 import com.coba.gtsharp.common.block.blocks.BlockInfiniteCasing;
 import com.coba.gtsharp.multiblock.GTSharpMetaTileEntities;
 
+import gregicality.multiblocks.api.unification.GCYMMaterials;
+import gregicality.multiblocks.common.block.GCYMMetaBlocks;
+import gregicality.multiblocks.common.block.blocks.BlockLargeMultiblockCasing;
 import gregtech.api.recipes.ModHandler;
+import gregtech.api.recipes.RecipeMaps;
+import gregtech.api.recipes.ingredients.IntCircuitIngredient;
 import gregtech.api.unification.OreDictUnifier;
 import gregtech.api.unification.material.MarkerMaterials;
 import gregtech.api.unification.material.Materials;
@@ -44,6 +50,16 @@ public final class GTSharpMetaTileEntityLoader {
                 'C', new UnificationEntry(circuit, MarkerMaterials.Tier.LuV),
                 'A', MetaTileEntities.ASSEMBLER[IV].getStackForm(),
                 'W', MetaTileEntities.WIREMILL[IV].getStackForm());
+        ModHandler.addShapedRecipe(true, "large_rock_factory", GTSharpMetaTileEntities.LARGE_ROCK_FACTORY.getStackForm(),
+                "CPC", "LAL", "CPC",
+                'P', ELECTRIC_PISTON_IV.getStackForm(),
+                'L', CONVEYOR_MODULE_IV.getStackForm(),
+                'C', new UnificationEntry(circuit, MarkerMaterials.Tier.IV),
+                'A', ROCK_BREAKER[IV].getStackForm());
+        ModHandler.addShapedRecipe(true, "casing_large_breaker",
+                GTSharpMetaBlocks.BREAK_PROOF_CASING.getItemVariant(BlockBreakProof.CasingType.BREAK_PROOF_CASING, 2),
+                "PhP", "PFP", "PwP", 'P', new UnificationEntry(OrePrefix.plate, GCYMMaterials.TitaniumTungstenCarbide),
+                'F', new UnificationEntry(OrePrefix.frameGt, TungstenSteel));
         ModHandler.addShapedRecipe(true, "infinite_miner_casing", GTSharpMetaBlocks.INFINITE_MINER_CASING.getItemVariant(BlockInfiniteCasing.CasingType.INFINITE_MINER_CASING, 2),
                 "PhP", "PFP", "PwP", 'P',
                 new UnificationEntry(OrePrefix.plate, Materials.NaquadahAlloy), 'F',
@@ -55,6 +71,13 @@ public final class GTSharpMetaTileEntityLoader {
                 .circuitMeta(6)
                 .outputs(GTSharpMetaBlocks.INFINITE_MINER_CASING.getItemVariant(BlockInfiniteCasing.CasingType.INFINITE_MINER_CASING, 2))
                 .duration(50).buildAndRegister();
+        ASSEMBLER_RECIPES.recipeBuilder()
+                .input(OrePrefix.plate, GCYMMaterials.TitaniumTungstenCarbide, 6)
+                .input(OrePrefix.frameGt, Materials.TungstenSteel)
+                .notConsumable(new IntCircuitIngredient(6))
+                .outputs(GTSharpMetaBlocks.BREAK_PROOF_CASING
+                        .getItemVariant(BlockBreakProof.CasingType.BREAK_PROOF_CASING, 2))
+                .duration(50).EUt(16).buildAndRegister();
         ASSEMBLER_RECIPES.recipeBuilder()
                 .input(frameGt, NaquadahAlloy, 1)
                 .input(circuit, MarkerMaterials.Tier.ZPM, 2)

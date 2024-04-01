@@ -5,7 +5,7 @@ gtsharp.machine.large_oil_cracker.name=Large Oil Cracker
 gtsharp.machine.large_gas_collector.name=Large Gas Collector
 gtsharp.machine.large_miner.uv.name=Infinite Ore Drilling Plant
 gtsharp.machine.large_cable_factory.name=Large Cable Factory
-gtsharp.machine.large_rock_faactory.name=Large Rock Factory
+gtsharp.machine.large_rock_factory.name=Large Rock Factory
 
 # multiblock descriptions
 gtsharp.multiblock.large_oil_cracker.description=A multiblock Machine for burn oil!
@@ -16,6 +16,7 @@ gtsharp.multiblock.large_rock_factory.description=We need more!
 
 
 recipemap.large_cable_factory.name=Cable Factory
+recipemap.large_rock.name=Cable Factory
 recipemap.infinite_miner_factory.name=Infinite Miner
 recipemap.rock_factory.name=Rock Factory
 
