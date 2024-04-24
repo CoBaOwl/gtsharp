@@ -6,7 +6,6 @@ public final class GTSharpRecipeLoader {
 
     public static void init() {
         GTSharpMetaTileEntityLoader.init();
-        GTSharpMiscRecipeLoader.init();
     }
 
 }

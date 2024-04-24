@@ -54,9 +54,10 @@ public class CommonProxy {
     @SubscribeEvent()
     public static void registerRecipes(RegistryEvent.Register<IRecipe> event) {
         GTSharpRecipeLoader.init();
-        GTSharpCableRecipeHandler.register();
-        GTSharpInfiniteMinerHandler.register();
-        GTSharpMaterialRecipeHandler.register();
-        GTSharpLargeExtrusionHandler.register();
+        if (GTSharpConfigHolder.globalMultiblocks.enableLargeRockFactory) GTSharpMiscRecipeLoader.init();
+        if (GTSharpConfigHolder.globalMultiblocks.enableLargeCableFactory) GTSharpCableRecipeHandler.register();
+        if (GTSharpConfigHolder.globalMultiblocks.enableInfiniteMiner) GTSharpInfiniteMinerHandler.register();
+        if (GTSharpConfigHolder.globalMultiblocks.enableElectricImplosionCompressor) GTSharpMaterialRecipeHandler.register();
+        if (GTSharpConfigHolder.globalMultiblocks.enableLargeExtruder) GTSharpLargeExtrusionHandler.register();
     }
 }

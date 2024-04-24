@@ -6,7 +6,7 @@
     "mcversion": "${mcversion}",
     "logoFile": "",
     "url": "",
-    "authorList": ["CoBa31Rus", "mrLmos"],
+    "authorList": ["CoBa31Rus", "mrLmos", "Logist"],
     "credits": "",
     "dependencies": ["codechickenlib", "gregtech"]
 }]

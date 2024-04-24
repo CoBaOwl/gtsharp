@@ -18,7 +18,9 @@ gtsharp.multiblock.large_rock_factory.description=We need more!
 recipemap.large_cable_factory.name=Cable Factory
 recipemap.large_rock.name=Cable Factory
 recipemap.infinite_miner_factory.name=Infinite Miner
-recipemap.rock_factory.name=Rock Factory
+recipemap.electric_implosion_compressor.name=Electric Implosion Compressor
+recipemap.extruder_recepies.name=Large Extruder
+recipemap.rock_factory.name=Large Rock Factory
 
 tile.large_multiblock_casing.infinite_miner_casing.name=Infinite Miner Casing
 tile.large_multiblock_casing.void_miner_casing.name=Voidproof Casing

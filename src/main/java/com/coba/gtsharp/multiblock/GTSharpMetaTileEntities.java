@@ -1,5 +1,6 @@
 package com.coba.gtsharp.multiblock;
 
+import com.coba.gtsharp.common.GTSharpConfigHolder;
 import com.coba.gtsharp.multiblock.standart.*;
 
 
@@ -21,13 +22,13 @@ public final class GTSharpMetaTileEntities {
 
     public static void init() {
         // Multiblocks
-        LARGE_MACHINE = registerMetaTileEntity(22620, new MetaTileEntityLargeOilCracker(gtsId("large_oil_cracker")));
-        LARGE_GAS_COLLECTOR = registerMetaTileEntity(22621, new MetaTileEntityLargeGasCollector(gtsId("large_gas_collector")));
-        LARGE_CABLE_FACTORY = registerMetaTileEntity(22622, new MetaTileEntityLargeCableFactory(gtsId("large_cable_factory")));
-        ELECTRIC_IMPLOSION_COMPRESSOR = registerMetaTileEntity(22623, new MetaTileEntityElectricImplosionCompressor(gcymId("electric_implosion_compressor")));
-        LARGE_ROCK_FACTORY = registerMetaTileEntity(22624, new MetaTileEntityLargeRockFactory(gtsId("large_rock_factory")));
-        LARGE_EXTRUDER = registerMetaTileEntity(22625, new MetaTileEntityLargeExtruder(gcymId("large_extruder")));
+        if (GTSharpConfigHolder.globalMultiblocks.enableLargeOilCracker) LARGE_MACHINE = registerMetaTileEntity(22620, new MetaTileEntityLargeOilCracker(gtsId("large_oil_cracker")));
+        if (GTSharpConfigHolder.globalMultiblocks.enableLargeGasCollector) LARGE_GAS_COLLECTOR = registerMetaTileEntity(22621, new MetaTileEntityLargeGasCollector(gtsId("large_gas_collector")));
+        if (GTSharpConfigHolder.globalMultiblocks.enableLargeCableFactory) LARGE_CABLE_FACTORY = registerMetaTileEntity(22622, new MetaTileEntityLargeCableFactory(gtsId("large_cable_factory")));
+        if (GTSharpConfigHolder.globalMultiblocks.enableElectricImplosionCompressor) ELECTRIC_IMPLOSION_COMPRESSOR = registerMetaTileEntity(22623, new MetaTileEntityElectricImplosionCompressor(gcymId("electric_implosion_compressor")));
+        if (GTSharpConfigHolder.globalMultiblocks.enableLargeRockFactory) LARGE_ROCK_FACTORY = registerMetaTileEntity(22624, new MetaTileEntityLargeRockFactory(gtsId("large_rock_factory")));
+        if (GTSharpConfigHolder.globalMultiblocks.enableLargeExtruder) LARGE_EXTRUDER = registerMetaTileEntity(22625, new MetaTileEntityLargeExtruder(gcymId("large_extruder")));
 
-        BASIC_INFINITE_MINER = registerMetaTileEntity(22632, new MetaTileEntityInfiniteMiner(gtsId("large_miner.uv")));
+        if (GTSharpConfigHolder.globalMultiblocks.enableInfiniteMiner) BASIC_INFINITE_MINER = registerMetaTileEntity(22632, new MetaTileEntityInfiniteMiner(gtsId("large_miner.uv")));
     }
 }
